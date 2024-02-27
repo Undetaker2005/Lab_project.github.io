@@ -1,0 +1,165 @@
+.menu {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 90%;
+    top: 10px;
+    left: 5%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo a, .logo img {
+    display: inline-block;
+    width: 90px;
+    height: 60px;
+}
+
+.menu-link {
+    display: inline-flex;
+    position: relative;
+    margin-left: auto;
+}
+
+.auth-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.auth-links a,
+.dropbtn,
+.phone-button,
+.telegram-button {
+    font-size: 20px;
+    text-decoration: none;
+    color: 463fab;
+    box-shadow: 0px 0px 10px #fff;
+    margin: 0 10px;
+}
+
+.auth-links a:hover,
+.dropbtn:hover,
+.phone-button:hover,
+.telegram-button:hover {
+    text-decoration: underline;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.dropbtn {
+    background-color: 463fab;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
+.phone-button,
+.telegram-button {
+    color: white;
+    background-color: transparent;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5147B8;
+    min-width: 100px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contact-buttons {
+    display: flex;
+    position: f;
+    align-items: center;
+}
+
+.contact-button,
+.phone-button,
+.telegram-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    background-color: rgba(66, 65, 65, 0.306);
+}
+
+span {
+    margin-right: 5px;
+}
+
+.containers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    margin-top: -100px;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.nav-content a {
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav-content a:hover {
+    background-color: #ddd;
+}
+
+.navbtn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-content.active {
+    display: block;
+    animation: fadeIn 0.3s;
+}

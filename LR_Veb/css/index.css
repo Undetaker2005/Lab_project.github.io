@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inika", sans-serif;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('../img/back.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-top {
+    padding: 65px 170px 0 95px;
+}
+
+.block-top {
+    padding: 190px 0 0 200px;
+    width: 400px;
+    height: 300px;
+}
+
+.block-top nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-right: 80px;
+}
+
+.button1 {
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #463fab;
+    color: white;
+    font-family: "Inika", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    width: 140px;
+    height: 60px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    border-radius: 20px;
+    border: 5px solid #463fab;
+}
+
+button:hover {
+    background-color: rgba(81, 71, 184, 0);
+    color: white;
+    border: 5px solid #463fab;
+}
+
+.footer {
+    background-image: url('../img/footer.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #34369b;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-container a {
+    margin: 0;
+    color: #FFFFFF;
+    font-family: "Inika", sans-serif;
+    font-size: 25px;
+}
+
+.footer-img {
+    background-image: url('../img/foter.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    background-color: rgba(81, 71, 184, 0);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-content .logo {
+    float: left;
+    height: 40px;
+}
+
+.footer-text {
+    padding-left: 50%;
+}
+
+.footer-text p {
+    font-family: "Inika", sans-serif;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.footer-links a {
+    text-decoration: none;
+    margin: 0;
+    color: #FFFFFF;
+    padding: 5px 0;
+}
+
+.links-container {
+    margin-left: 100px;
+}
+
+.footer-links li {
+    margin: 0;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.info {
+    background-color: #5147B8;
+}
+
+.info-top {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.main-content-top {
+    display: grid;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.main-content-top nav {
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.block-info nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-right,
+.img-left {
+    width: 900px;
+    height: 900px;
+}
+
+.new-top,
+.new-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 1800px;
+}
+
+.new-top nav,
+.new-bottom nav {
+    display: flex;
+}
+
+.new-top img,
+.new-bottom img {
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+.new-top h1,
+.new-bottom h1 {
+    color: #FFFFFF;
+}
+
+.text-25 {
+    background-image: url('../img/Star.png');
+    background-size: cover;
+    background-position: center;
+    width: 800px;
+    padding: 12vw;
+    line-height: 1.5;
+}
+
+h1 {
+    margin: 0;
+    color: #2E2685;
+    font-weight: bold;
+    font-family: "Inika", sans-serif;
+    font-size: 45px;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+    font-family: "Inika", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+}
+
+h3 {
+    margin: 0;
+    color: #2E2685;
+    font-size: 45px;
+}
+
+p {
+    margin: 0;
+    color: #2E2685;
+    font-family: Inika;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text-25 p {
+    margin: 0;
+    color: white;
+    font-family: Inika;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 20px;
+}

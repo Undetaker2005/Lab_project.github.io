@@ -1,0 +1,185 @@
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  top: 10px;
+  left: 5%;
+}
+.menu .logo a,
+.menu .logo img {
+  display: inline-block;
+  width: 90px;
+  height: 60px;
+}
+.menu .menu-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  margin-left: auto;
+}
+.menu .auth-links {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu .auth-links a,
+.menu .auth-links .dropbtn,
+.menu .auth-links .phone-button,
+.menu .auth-links .telegram-button {
+  font-size: 20px;
+  text-decoration: none;
+  color: #463fab;
+  -webkit-box-shadow: 0px 0px 10px #fff;
+          box-shadow: 0px 0px 10px #fff;
+  margin: 0 10px;
+}
+.menu .auth-links a:hover,
+.menu .auth-links .dropbtn:hover,
+.menu .auth-links .phone-button:hover,
+.menu .auth-links .telegram-button:hover {
+  text-decoration: underline;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.menu .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+.menu .dropdown .dropbtn {
+  background-color: #463fab;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+}
+.menu .dropdown .phone-button,
+.menu .dropdown .telegram-button {
+  color: white;
+  background-color: transparent;
+}
+.menu .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #5147b8;
+  min-width: 100px;
+  -webkit-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.menu .dropdown .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.menu .dropdown .dropdown-content a:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+.menu .dropdown:hover .dropdown-content {
+  display: block;
+}
+.contact-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: f;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-buttons .contact-button,
+.contact-buttons .phone-button,
+.contact-buttons .telegram-button {
+  background-color: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 18px;
+  margin: 0 5px auto;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: rgba(66, 65, 65, 0.306);
+  background-color: #463fab;
+}
+.contact-buttons span {
+  margin-right: 5px;
+}
+.containers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -100px;
+}
+.navbar .nav-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.navbar .nav-content a {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.navbar .nav-content a:hover {
+  background-color: #ddd;
+}
+.navbar .nav-content .navbtn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navbar .nav-content.active {
+  display: block;
+  -webkit-animation: fadeIn 0.3s;
+          animation: fadeIn 0.3s;
+}
