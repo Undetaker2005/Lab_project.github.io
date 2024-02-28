@@ -1,20 +1,26 @@
 .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: fixed;
     justify-content: center;
-    width: 90%;
+    width: 95%;
     top: 10px;
-    left: 5%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    left: 2.5%;
 
-    .logo a,
-    .logo img {
-        display: inline-block;
-        width: 90px;
-        height: 60px;
+    .logo {
+
+        a,
+        img {
+            display: inline-block;
+            width: 90px;
+            height: 60px;
+        }
     }
 
     .menu-link {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
         position: relative;
         margin-left: auto;
@@ -54,11 +60,12 @@
         .dropbtn {
             background-color: #463fab;
             color: white;
-            padding: 8px 20px;
-            border-radius: 8px;
+            padding: 16px 16px;
+            border-radius: 10px;
             border: none;
             cursor: pointer;
             width: auto;
+            margin: 0 5px auto;
         }
 
         .phone-button,
@@ -86,19 +93,22 @@
 
                 &:hover {
                     background-color: rgba(128, 128, 128, 0.5);
+                    border-radius: 10px;
                 }
             }
         }
 
-        &:hover .dropdown-content {
-            display: block;
+        &:hover {
+            .dropdown-content {
+                display: block;
+            }
         }
     }
 }
 
 .contact-buttons {
     display: flex;
-    position: f;
+    position: relative;
     align-items: center;
 
     .contact-button,
@@ -108,13 +118,18 @@
         border: none;
         display: flex;
         align-items: center;
-        color: black;
+        color: #fff;
+        font-size: 2vh;
+        padding: 18px 20px;
+        margin: 0 5px auto;
+        border-radius: 10px;
         text-decoration: none;
         background-color: rgba(66, 65, 65, 0.306);
-    }
+        background-color: #463fab;
 
-    span {
-        margin-right: 5px;
+        span {
+            margin-right: 5px;
+        }
     }
 }
 
