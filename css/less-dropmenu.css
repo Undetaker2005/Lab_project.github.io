@@ -6,9 +6,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 90%;
+  width: 95%;
   top: 10px;
-  left: 5%;
+  left: 2.5%;
 }
 .menu .logo a,
 .menu .logo img {
@@ -62,11 +62,12 @@
 .menu .dropdown .dropbtn {
   background-color: #463fab;
   color: white;
-  padding: 8px 20px;
+  padding: 16px 16px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
   width: auto;
+  margin: 0 5px auto;
 }
 .menu .dropdown .phone-button,
 .menu .dropdown .telegram-button {
@@ -116,11 +117,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #fff;
-  font-size: 20px;
-  padding: 18px;
+  font-size: 2vh;
+  padding: 18px 20px;
   margin: 0 5px auto;
   border-radius: 10px;
   text-decoration: none;

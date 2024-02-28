@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/less-dropmenu.css">
     <title>LR_1</title>
 </head>
-<body>
+<body class="loaded">
     <header>
         <div class = "menu">
             <div class = "logo">
@@ -18,14 +18,14 @@
             <div class = "menu-link">
                 <div class="contact-buttons">
                     <a href="" class="phone-button">
-                        <i class="fas fa-phone-alt"></i><span></span>Телефон
+                        <i class="fas fa-phone-alt"></i>
                     </a>
                     <a href="https://web.telegram.org/a/#1968603785" class="telegram-button">
-                        <i class="fab fa-telegram-plane"></i> Телеграм
+                        <i class="fab fa-telegram-plane"></i>
                     </a>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn">Menu<i class="fas fa-bars" style = "margin: 0 5px;"></i></button>
+                    <button class="dropbtn"><i class="fas fa-bars" style = "margin: 0 5px;"></i></button>
                     <div class="dropdown-content">
                         <a href="#">Location</a>
                         <a href="#">Price</a>
@@ -34,7 +34,6 @@
                 </div>
             </div>
         </div>
-        
         <div class="block-top">
             <h3>Golden Time</h3>
             <h2>The Best <br> Night Travels</h2>
@@ -49,7 +48,7 @@
             <h1>Golden Time</h1>
             <h2>Golden Time</h2>
             <p>There are many variations of passages of Lorem Ipsum</p>
-        </main>
+        </main> 
         <div class="main-content-top">
             <main>
                 <article class = "new-top">
@@ -145,5 +144,12 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        window.addEventListener('load', function () {
+                document.body.classList.remove('loaded');
+            });
+    </script>
+
 </body>
 </html>
