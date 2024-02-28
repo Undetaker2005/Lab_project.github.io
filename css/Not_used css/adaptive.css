@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inika", sans-serif;
+    overscroll-behavior-y: none;
+    background-color: #5147B8;
+}
+
+body:not(.loaded) {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('../img/back.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-top {
+    padding: 6vh 12vw 0 6vw;
+}
+
+.block-top {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30%;
+    left: 10%;
+    max-width: 25%;
+    height: 30%;
+    width: 20%;
+}
+
+.block-top nav {
+    display: grid;
+    position: relative;
+    grid-auto-flow: column;
+    align-items: center;
+    max-width: 80%;
+    left: 10%;
+}
+
+button {
+    background-color: #463fab;
+    color: white;
+    font-family: "Inika", sans-serif;
+    font-weight: bold;
+    font-size: 2vh;
+    width: 70%;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    border-radius: 20px;
+    padding: 0 5%;
+    border: 5px solid #463fab;
+    box-shadow: 0 0 10px white;
+}
+
+button:hover {
+    background-color: rgba(81, 71, 184, 0);
+    color: white;
+    border: 5px solid #463fab;
+    box-shadow: 0 0 20px white;
+}
+
+.footer {
+    background-image: url('../img/footer.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #34369b;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container a, .footer-text p, .footer-links a{
+    margin: 0;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Inika", sans-serif;
+    font-size: 1.5vh;
+    position: relative;
+}
+
+.footer-img {
+    background-image: url('../img/foter.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    background-color: rgba(81, 71, 184, 0);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-content .logo {
+    float: left;
+    height: 60px;
+}
+
+.footer-text {
+    padding-left: 40%;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    list-style: none;
+    padding-left: 1%;
+    padding-right: 5%;
+}
+
+.footer-links a::before {
+    content: "\2022";
+    color: #FFFFFF;
+    margin-right: 5px;
+    position: absolute;
+    left: -15px;
+}
+
+.info {
+    background-color: #5147B8;
+}
+
+.info-top {
+    display: grid;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    width: 80%;
+    left: 10%;
+    padding-top: 1%;
+}
+
+.main-content-top {
+    display: grid;
+    position: relative;
+    justify-content: center;
+    width: 80%;
+    padding: 2% 0 2% 0;
+    left: 10%;
+}
+
+.main-content-top nav {
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.block-info nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-right,
+.img-left {
+    width: 50%;
+    height: 50%;
+}
+
+.new-top,
+.new-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-top nav,
+.new-bottom nav {
+    display: flex;
+    width: 30%;
+}
+
+.new-top img,
+.new-bottom img {
+    width: 20%;
+    height: 50%;
+}
+
+.new-top h1,
+.new-bottom h1 {
+    color: #FFFFFF;
+}
+
+.text-25 {
+    background-image: url(../img/Star.png);
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    line-height: 1.5;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    color: #2E2685;
+    font-weight: bold;
+    font-family: "Inika", sans-serif;
+    font-size: 4vh;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+    font-family: "Inika", sans-serif;
+    font-weight: bold;
+    font-size: 5vh;
+}
+
+h3 {
+    margin: 0;
+    color: #2E2685;
+    font-size: 4vh;
+}
+
+p {
+    margin: 0;
+    color: #2E2685;
+    font-family: Inika;
+    font-size: 2.5vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text-25 p {
+    margin: 0;
+    color: white;
+    font-family: Inika;
+    font-size: 1.5vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 20px;
+}

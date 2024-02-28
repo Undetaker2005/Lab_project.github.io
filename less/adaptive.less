@@ -1,13 +1,22 @@
+@font-family: "Inika", sans-serif;
+@primary-color: #5147B8;
+@secondary-color: #463fab;
+@accent-color: #2E2685;
+@footer-bg-color: #34369b;
+@footer-text-color: #FFFFFF;
+
 body {
     margin: 0;
     padding: 0;
-    font-family: "Inika", sans-serif;
-}
+    font-family: @font-family;
+    overscroll-behavior-y: none;
+    background-color: @primary-color;
 
-body:not(.loaded) {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    &.loaded {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
 }
 
 header {
@@ -25,35 +34,45 @@ header {
 }
 
 .block-top {
-    padding: 15vh 0 0 10vw;
-    max-width: 20%;
-    height: 300px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30%;
+    left: 10%;
+    max-width: 25%;
+    height: 30%;
+    width: 20%;
 }
 
 .block-top nav {
     display: grid;
+    position: relative;
     grid-auto-flow: column;
     align-items: center;
-    /* height: 70px; */
+    max-width: 80%;
+    left: 10%;
 }
 
 button {
-    background-color: #463fab;
+    background-color: @secondary-color;
     color: white;
-    font-family: "Inika", sans-serif;
+    font-family: @font-family;
     font-weight: bold;
     font-size: 2vh;
     width: 70%;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     border-radius: 20px;
     padding: 0 5%;
-    border: 5px solid #463fab;
-}
+    border: 5px solid @secondary-color;
+    box-shadow: 0 0 10px white;
 
-button:hover {
-    background-color: rgba(81, 71, 184, 0);
-    color: white;
-    border: 5px solid #463fab;
+    &:hover {
+        background-color: rgba(81, 71, 184, 0);
+        color: white;
+        border: 5px solid @secondary-color;
+        box-shadow: 0 0 20px white;
+    }
 }
 
 .footer {
@@ -63,7 +82,7 @@ button:hover {
     display: flex;
     justify-content: center;
     padding: 40px 0;
-    background-color: #34369b;
+    background-color: @footer-bg-color;
 }
 
 .logo-container {
@@ -71,11 +90,13 @@ button:hover {
     align-items: center;
 }
 
-.logo-container a, .footer-text p, .footer-links a{
+.logo-container a,
+.footer-text p,
+.footer-links a {
     margin: 0;
     text-decoration: none;
-    color: #FFFFFF;
-    font-family: "Inika", sans-serif;
+    color: @footer-text-color;
+    font-family: @font-family;
     font-size: 1.5vh;
     position: relative;
 }
@@ -113,18 +134,18 @@ button:hover {
     list-style: none;
     padding-left: 1%;
     padding-right: 5%;
-}
 
-.footer-links a::before {
-    content: "\2022";
-    color: #FFFFFF;
-    margin-right: 5px;
-    position: absolute;
-    left: -15px;
+    a::before {
+        content: "\2022";
+        color: @footer-text-color;
+        margin-right: 5px;
+        position: absolute;
+        left: -15px;
+    }
 }
 
 .info {
-    background-color: #5147B8;
+    background-color: @primary-color;
 }
 
 .info-top {
@@ -144,11 +165,11 @@ button:hover {
     width: 80%;
     padding: 2% 0 2% 0;
     left: 10%;
-}
 
-.main-content-top nav {
-    justify-content: center;
-    padding-bottom: 40px;
+    nav {
+        justify-content: center;
+        padding-bottom: 40px;
+    }
 }
 
 .block-info nav {
@@ -171,21 +192,18 @@ button:hover {
 .new-top nav,
 .new-bottom nav {
     display: flex;
-    width: 100%;
+    width: 30%;
 }
 
 .new-top img,
 .new-bottom img {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    width: 10%;
+    width: 20%;
     height: 50%;
 }
 
 .new-top h1,
 .new-bottom h1 {
-    color: #FFFFFF;
+    color: @footer-text-color;
 }
 
 .text-25 {
@@ -201,30 +219,30 @@ button:hover {
 
 h1 {
     margin: 0;
-    color: #2E2685;
+    color: @accent-color;
     font-weight: bold;
-    font-family: "Inika", sans-serif;
+    font-family: @font-family;
     font-size: 4vh;
 }
 
 h2 {
     margin: 0;
     color: white;
-    font-family: "Inika", sans-serif;
+    font-family: @font-family;
     font-weight: bold;
     font-size: 5vh;
 }
 
 h3 {
     margin: 0;
-    color: #2E2685;
+    color: @accent-color;
     font-size: 4vh;
 }
 
 p {
     margin: 0;
-    color: #2E2685;
-    font-family: Inika;
+    color: @accent-color;
+    font-family: @font-family;
     font-size: 2.5vh;
     font-style: normal;
     font-weight: 700;
@@ -233,8 +251,8 @@ p {
 
 .text-25 p {
     margin: 0;
-    color: white;
-    font-family: Inika;
+    color: @footer-text-color;
+    font-family: @font-family;
     font-size: 1.5vh;
     font-style: normal;
     font-weight: 700;

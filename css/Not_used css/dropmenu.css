@@ -100,7 +100,7 @@
 
 .contact-buttons {
     display: flex;
-    position: f;
+    position: relative;
     align-items: center;
 }
 

@@ -95,6 +95,7 @@
 }
 .menu .dropdown .dropdown-content a:hover {
   background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
 }
 .menu .dropdown:hover .dropdown-content {
   display: block;
